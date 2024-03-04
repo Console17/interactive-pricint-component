@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive pricing component</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <img src="./images/bg-pattern.svg" class="background" />
+    <div class="main-container">
+      <div class="content">
+        <img src="./images/pattern-circles.svg" class="pattern-circles" />
+        <section class="section-top">
+          <h1>Simple, traffic-based pricing</h1>
+          <p>Sign-up for our 30-day trial. No credit card required.</p>
+        </section>
+      </div>
+      <section class="pricing-section">
+        <div class="pricinig-div">
+          <p class="pricing-paragraph pageviewvs">100K PAGEVIEWVS</p>
+          <div class="slider-div">
+            <input
+              type="range"
+              min="0"
+              max="32"
+              value="16"
+              class="slider"
+              id="myRange"
+            />
+          </div>
+          <div class="price-display">
+            <h2 class="price">$16.00</h2>
+            <p class="pricing-paragraph price-month">/ month</p>
+          </div>
+          <div class="price-toggle">
+            <p class="pricing-paragraph monthly">Monthly Billing</p>
+            <label class="switch">
+              <input type="checkbox" class="billing-toggle" />
+              <span class="slider-toggle round"></span>
+            </label>
+            <p class="pricing-paragraph yearly">Yearly Billing</p>
+            <p class="discount-p">-25%</p>
+          </div>
+        </div>
+        <div class="trial-div">
+          <p>Unlimited websites</p>
+          <p>100% data ownership</p>
+          <p>Email reports</p>
+          <button>Start my trial</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
